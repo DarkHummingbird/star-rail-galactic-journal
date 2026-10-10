@@ -1,0 +1,1 @@
+{"name":"star-rail-galactic-journal","private":true,"version":"2.0.0","scripts":{"dev":"node scripts/serve.mjs","check":"node --check dist/app.js"}}
