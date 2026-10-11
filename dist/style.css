@@ -44,3 +44,24 @@ body.boarding{overflow:hidden}.opening-enter{position:absolute;left:120px;bottom
 .path-gate{background:radial-gradient(ellipse at 72% 45%,color-mix(in srgb,var(--aeon-glow) 24%,#0a0c19),#060a15 76%)}
 .aeon-backdrop{left:auto;right:-3%;width:78%;height:110%;top:-5%;object-fit:contain;object-position:center;opacity:.9}
 .path-emblem{top:20%;transform:none}.aeon-backdrop{height:94%;top:3%}
+
+/* A single viewport stage: chapters reveal over one another instead of stacking as long pages. */
+.cinematic .journey-stage{position:relative;height:100svh;min-height:650px;overflow:hidden;background:#080d1a;isolation:isolate}
+.cinematic .journey-stage>section{position:absolute;inset:0;width:100%;height:100%;min-height:0;transform-origin:50% 50%;overflow:hidden}
+.cinematic .character-stage,.cinematic .crew-stage{height:100%;min-height:0}
+.cinematic .atlas{padding-top:100px}.cinematic .atlas h2{font-size:clamp(64px,7.5vw,125px);margin-top:48px}
+.cinematic .atlas .f1{top:15%;width:29vw}.cinematic .atlas .f2{top:50%;left:15%;width:25vw}.cinematic .atlas .f3{top:43%;right:9%;width:24vw}.cinematic .atlas .f4{bottom:8%;right:27%;width:24vw}
+.cinematic .atlas-note{bottom:55px;max-width:260px}
+.cinematic .memories{padding-top:105px}.cinematic .memory-title h2{font-size:clamp(55px,6.2vw,100px);margin:35px 0 22px}
+.cinematic .depart{padding-top:115px;padding-bottom:70px}.cinematic .depart h2{font-size:clamp(64px,9vw,145px);margin:42px 0}
+.march-parallax{position:absolute;inset:0;will-change:transform;pointer-events:none}
+.character-texture{inset:-5%;will-change:transform}.hero-type span{will-change:transform}
+/* The entire opening is a semantic, keyboard-accessible boarding target. */
+.opening-enter{inset:0;width:100%;height:100%;padding:0;border:0;border-radius:0;background:transparent;backdrop-filter:none;display:block;z-index:4}
+.opening-enter:hover{background:transparent}.opening-enter:focus-visible{outline:1px solid #fff8;outline-offset:-35px}
+.opening-hint{position:absolute;bottom:65px;left:120px;font-size:11px;color:#fff;letter-spacing:.14em;pointer-events:none;z-index:5;opacity:.75}.opening-hint i{font-style:normal;margin-left:20px}
+.entering .entry-white{pointer-events:auto}
+.scan-open .aeon-backdrop{filter:brightness(.55)}.scan-open .path-emblem,.scan-open .aeon-name{opacity:.3!important}
+@media(max-height:780px){.cinematic .depart{padding-top:100px}.cinematic .depart h2{font-size:8vw;margin:35px 0}.cinematic .depart-row{padding-top:25px}.cinematic .depart>a{margin-top:25px}.cinematic .memory-title h2{font-size:5.5vw}.cinematic .crew-heading{top:15%}.cinematic .crew-deck{top:44%;height:43%}.cinematic .atlas h2{font-size:6.5vw;margin-top:35px}}
+
+.motion-off .march-parallax,.motion-off .character-texture{transform:none!important}
