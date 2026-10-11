@@ -2,7 +2,9 @@
 
 以《崩坏：星穹铁道》为主题的 PC 端电影式互动展示网站，采用 HTML、CSS、JavaScript 和 GSAP。
 
-在线体验：https://astral-express.tangyharp8.chatgpt.site/
+在线体验：https://darkhummingbird.github.io/star-rail-galactic-journal/
+
+原网站：https://astral-express.tangyharp8.chatgpt.site/
 
 ## 本地运行
 
@@ -30,6 +32,8 @@ npm run check
 - 仅设计 PC 端，无二级页面。
 
 ## 部署
+
+GitHub Pages 从 `gh-pages` 分支根目录发布到默认域名。更新时将 `dist/` 内容同步到发布分支，无需构建。
 
 `dist/` 是可直接部署的静态网站，包含页面与全部素材。可交给任意静态网站托管服务，设网站根目录为 `dist`，无需构建步骤。
 
