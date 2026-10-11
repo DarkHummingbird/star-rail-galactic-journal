@@ -65,3 +65,17 @@ body.boarding{overflow:hidden}.opening-enter{position:absolute;left:120px;bottom
 @media(max-height:780px){.cinematic .depart{padding-top:100px}.cinematic .depart h2{font-size:8vw;margin:35px 0}.cinematic .depart-row{padding-top:25px}.cinematic .depart>a{margin-top:25px}.cinematic .memory-title h2{font-size:5.5vw}.cinematic .crew-heading{top:15%}.cinematic .crew-deck{top:44%;height:43%}.cinematic .atlas h2{font-size:6.5vw;margin-top:35px}}
 
 .motion-off .march-parallax,.motion-off .character-texture{transform:none!important}
+
+/* Quiet frame chrome and continuous portrait choreography. */
+.frame{border-color:#ffffff26}.frame.light{border-color:#14141b16}
+.frame:before{opacity:.11}.frame nav a{opacity:.56;transition:opacity .25s}.frame nav a.active{opacity:.88}.frame nav a:hover,.frame nav a:focus-visible{opacity:1}
+.frame .brand,.frame .menu-toggle{opacity:.62}.frame .spine{border-color:#ffffff1c}.frame.light .spine,.frame.light .menu-toggle{border-color:#14141b16}
+.spine>span{opacity:.48}.spine>svg{opacity:.55}.frame-progress{opacity:.5}
+.opening-black{position:absolute;inset:0;z-index:8;background:#000;opacity:0;pointer-events:none}
+.march-art{transform-origin:0 0}.crew-reveal{position:absolute;inset:0;transform-origin:50% 50%;background:var(--tone);overflow:hidden;will-change:transform}
+.crew-reveal:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#161b364a,transparent 45%);pointer-events:none}
+.cinematic .atlas{background:#988bdf}.cinematic .character-card:after{background:linear-gradient(0deg,#161b364a,transparent 45%)}
+
+.crew-card:after{display:none}
+
+.logo-hold .frame,.logo-hold .opening-label,.logo-hold .opening-hint{opacity:0}.logo-hold .frame>*{pointer-events:none}
